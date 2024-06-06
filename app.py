@@ -18,7 +18,7 @@ def upload_file():
         filename = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
         file_content = file.read()
         uploads[filename] = file_content
-        return f'https://cypherapi-ols5.vercel.app/uploads/{filename}', 200
+        return f'https://cypherapi.vercel.app/uploads/{filename}', 200
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
