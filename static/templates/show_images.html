@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Show Images</title>
+  <meta http-equiv="refresh" content="600;url=/" />  <!-- Redirige a la página principal después de 600 segundos (10 minutos) -->
+</head>
+<body>
+  <h1>Uploaded Images</h1>
+  <div>
+    {% for image_url in image_urls %}
+      <img src="{{ image_url }}" alt="Uploaded Image" style="max-width: 100%; height: auto;">
+    {% endfor %}
+  </div>
+</body>
+</html>
