@@ -9,7 +9,7 @@ app = Flask(__name__)
 uploads = {}
 
 # Tiempo en segundos para mantener el archivo en memoria antes de eliminarlo
-EXPIRATION_TIME = 60 
+EXPIRATION_TIME = 86400  # 1 dia
 
 def remove_file_after_timeout(filename):
     time.sleep(EXPIRATION_TIME)
@@ -27,7 +27,7 @@ def upload_file():
         filename = ''.join(random.choices(string.ascii_lowercase + string.digits, k=16))
         file_content = file.read()
         uploads[filename] = file_content
-        # Crear un hilo para eliminar el archivo después de cierto tiempo
+        # Elimino la imagen
         threading.Thread(target=remove_file_after_timeout, args=(filename,)).start()
         return f'https://cypherapi.vercel.app/uploads/{filename}', 200
 
