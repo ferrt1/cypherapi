@@ -23,7 +23,7 @@ html {
   justify-content: center;
   align-items: center;
   background: #0e0e0e;
-  color: var(--firstColor);
+  color: #00ffdd;
   overflow: hidden;
 }
 
@@ -40,23 +40,23 @@ h1 {
   margin: 20px 0 0 0;
   padding: 0;
   text-transform: uppercase;
-  animation: glow 1.5s ease-in-out infinite alternate;
-  color: var(--thirdColor); /* Usando thirdColor */
+  color: var(--thirdColor);
 }
 
 button {
   margin-top: 20px;
   padding: 15px 30px;
   border: none;
-  background: var(--firstColor);
+  background: #00ffdd;
   color: #0e0e0e;
   font-size: 1.2rem;
+  font-family: "ExpandedConsolaBold", "Arial", sans-serif;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
 button:hover {
-  background: var(--firstColor);
+  background: #00ccb3;
 }
 
 .icon {
@@ -75,15 +75,7 @@ button:hover {
   }
 }
 
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px var(--firstColor), 0 0 20px var(--firstColor), 0 0 30px var(--firstColor);
-  }
-  to {
-    text-shadow: 0 0 20px var(--firstColor), 0 0 30px var(--firstColor), 0 0 40px var(--firstColor);
-  }
-}
-
+/* Media queries for responsive design */
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
