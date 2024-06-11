@@ -1,8 +1,7 @@
 /* templates/styles.css */
 @font-face {
   font-family: "ExpandedConsolaBold";
-  src: url("{{ url_for('static', filename='fonts/expandedconsolabold.ttf') }}")
-    format("truetype");
+  src: url("/static/fonts/expandedconsolabold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -24,7 +23,7 @@ html {
   justify-content: center;
   align-items: center;
   background: #0e0e0e;
-  color: #00ffdd;
+  color: var(--firstColor);
   overflow: hidden;
 }
 
@@ -49,7 +48,7 @@ button {
   margin-top: 20px;
   padding: 15px 30px;
   border: none;
-  background: #00ffdd;
+  background: var(--firstColor);
   color: #0e0e0e;
   font-size: 1.2rem;
   cursor: pointer;
@@ -57,7 +56,7 @@ button {
 }
 
 button:hover {
-  background: #00ccb3;
+  background: var(--firstColor);
 }
 
 .icon {
@@ -78,10 +77,10 @@ button:hover {
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #00ffdd, 0 0 20px #00ffdd, 0 0 30px #00ffdd;
+    text-shadow: 0 0 10px var(--firstColor), 0 0 20px var(--firstColor), 0 0 30px var(--firstColor);
   }
   to {
-    text-shadow: 0 0 20px #00ffdd, 0 0 30px #00ffdd, 0 0 40px #00ffdd;
+    text-shadow: 0 0 20px var(--firstColor), 0 0 30px var(--firstColor), 0 0 40px var(--firstColor);
   }
 }
 
