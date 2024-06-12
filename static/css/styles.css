@@ -22,7 +22,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0e0e0e;
+  background: white;
   color: #00ffdd;
   overflow: hidden;
 }
@@ -33,11 +33,18 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.text-content {
+  text-align: center; /* Cambiado a center */
+  margin-bottom: 20px;
 }
 
 h1 {
   font-size: 3rem;
-  margin: 20px 0 0 0;
+  margin: 20px 0 10px 0;
   padding: 0;
   text-transform: uppercase;
   color: var(--thirdColor);
@@ -53,23 +60,24 @@ button {
   margin-top: 20px;
   padding: 15px 30px;
   border: none;
-  border-radius: 10px; /* Borde redondeado */
-  background: #00ffdd;
-  color: #0e0e0e;
+  border-radius: 10px;
+  background: var(--firstColor);
+  color: white;
   font-size: 1.2rem;
   font-family: "ExpandedConsolaBold", "Arial", sans-serif;
   cursor: pointer;
   transition: background 0.3s ease;
+  width: 90%; /* Aumentado a 90% */
+  max-width: 1200px; /* Ancho máximo aumentado */
 }
 
 button:hover {
-  background: #00ccb3;
+  background: var(--secondColor);
 }
 
 .icon {
   width: 100px;
   height: 100px;
-  margin-top: 20px; /* Espacio entre el icono y el botón en pantallas pequeñas */
 }
 
 @keyframes fadeIn {
@@ -83,19 +91,25 @@ button:hover {
   }
 }
 
-/* Media queries for responsive design */
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+  }
+  .text-content {
+    text-align: left; /* Cambiado a left para pantallas grandes */
+    margin-bottom: 0;
   }
 
-  .text-content {
-    text-align: left;
+  .image-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .icon {
-    margin-top: 0; /* Remover el margen superior en pantallas grandes */
-    margin-left: 20px; /* Espacio entre el icono y el texto */
+    margin-left: 50px;
   }
 }

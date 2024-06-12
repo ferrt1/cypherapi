@@ -9,10 +9,14 @@
 </head>
 <body>
   <div class="container">
-    <img src="{{ url_for('static', filename='imgs/icon.png') }}" alt="Icono Cypher Vault" class="icon">
-    <h1>Cypher Vault</h1>
-    <p class="description">Cypher Vault es una aplicación de guardado de imágenes de forma totalmente segura.</p>
-    <button>Descárgalo aquí</button>
+    <div class="text-content">
+      <h1>Cypher Vault</h1>
+      <p class="description">Cypher Vault es una aplicación de guardado de imágenes de forma totalmente segura.</p>
+      <button>Descárgalo aquí</button>
+    </div>
+    <div class="image-content">
+      <img src="{{ url_for('static', filename='imgs/icon.png') }}" alt="Icono Cypher Vault" class="icon">
+    </div>
   </div>
 </body>
 </html>
