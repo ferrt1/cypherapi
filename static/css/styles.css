@@ -69,6 +69,7 @@ button:hover {
 .icon {
   width: 100px;
   height: 100px;
+  margin-top: 20px; /* Espacio entre el icono y el botón en pantallas pequeñas */
 }
 
 @keyframes fadeIn {
@@ -86,9 +87,15 @@ button:hover {
 @media (min-width: 768px) {
   .container {
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text-content {
+    text-align: left;
   }
 
   .icon {
-    margin-right: 20px;
+    margin-top: 0; /* Remover el margen superior en pantallas grandes */
+    margin-left: 20px; /* Espacio entre el icono y el texto */
   }
 }
