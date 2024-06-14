@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cypher Vault</title>
-  <link rel="icon" href="{{ url_for('static', filename='imgs/icon.png') }}" type="image/png">
-  <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-<body>
-  <header class="header">
-    <div class="logo">      
-      <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
-      <img src="../static/imgs/icon.png" alt="Icono Cypher Vault" class="header-logo">      
-      <p>InnovaSoft</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cypher Vault</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='imgs/icon.png') }}"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <i class="fa-solid fa-bars menu-icon" id="menu-icon"></i>
+        <img
+          src="../static/imgs/icon.png"
+          alt="Icono Cypher Vault"
+          class="header-logo"
+        />
+        <p>InnovaSoft</p>
+      </div>
+
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#">Quiénes Somos</a></li>
+          <li class="nav-item"><a href="#">Cypher Vault</a></li>
+          <li class="nav-item"><a href="#">Más Proyectos</a></li>
+        </ul>
+      </nav>
+      <div class="overlay" id="overlay"></div>
+    </header>
+
+    <div class="main">
+      <div class="text-content">
+        <h1 class="title">Cypher Vault</h1>
+        <p class="description">
+          Obtén la mejor aplicación de guardado de imágenes de forma totalmente
+          segura.
+        </p>
+        <a
+          href="https://drive.google.com/uc?export=download&id=1SvjcLxBQ4uISHwmr86_VS3v5v1UJW_Pl"
+          class="download"
+          >Descargar en Android <i class="fa-solid fa-download"></i
+        ></a>
+      </div>
+      <div class="image-content">
+        <img
+          src="../static/imgs/tabletCypher.png"
+          alt="Icono Cypher Vault"
+          class="image"
+        />
+      </div>
     </div>
 
-    <nav class="nav" id="nav">
-      <ul class="nav-list">
-        <li class="nav-item"><a href="#">Quiénes Somos</a></li>
-        <li class="nav-item"><a href="#">Cypher Vault</a></li>
-        <li class="nav-item"><a href="#">Más Proyectos</a></li>
-      </ul>
-    </nav>
-    <div class="overlay" id="overlay"></div>
-  </header>
- 
-  <div class="main">
-    <div class="text-content">
-      <h1 class="title">Cypher Vault</h1>
-      <p class="description">Obtén la mejor aplicación de guardado de imágenes de forma totalmente segura.</p>
-      <a href="https://drive.google.com/uc?export=download&id=1SvjcLxBQ4uISHwmr86_VS3v5v1UJW_Pl" class="download">Descargar en Android</a>
+    <div class="who">
+      <h2 class="who-title">¿Quiénes somos?</h2>
     </div>
-    <div class="image-content">
-      <img src="../static/imgs/tabletCypher.png" alt="Icono Cypher Vault" class="image">
-    </div>
-  </div>
 
-  <div>
-    
-  </div>
-
-  <script src="../static/js/scripts.js"></script>
-  <script src="https://kit.fontawesome.com/6616501bac.js" crossorigin="anonymous"></script>
-</body>
+    <script src="../static/js/scripts.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6616501bac.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

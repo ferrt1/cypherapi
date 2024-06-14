@@ -8,7 +8,7 @@
 :root {
   --firstColor: #02a6c3;
   --secondColor: #01243a;
-  --thirdColor: #005767;
+  --thirdColor: #6fecff;
 }
 
 body,
@@ -18,6 +18,8 @@ html {
   font-family: "ExpandedConsolaBold", "Arial", sans-serif;
   background: white;
 }
+
+/* ******** HEADER ******** */
 
 .header {
   display: flex;
@@ -66,17 +68,35 @@ html {
 .nav-list {
   list-style-type: none;
   padding: 20px;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav-item {
-  margin: 20px 0;
+  margin: 50px auto;
 }
 
 .nav-item a {
   color: var(--firstColor);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.nav-list li {
+  border-bottom: 1px solid var(--firstColor);
+  padding-bottom: 6px;
+  max-width: 300px;
+}
+
+ .nav-list li:hover {
+  transform: scale(1.1); 
+} 
+
+
+.nav-item a:hover {
+  transform: scale(1.1); /* Hacer más grande */
+  color: var(--secondColor); /* Cambiar de color */
 }
 
 .overlay {
@@ -95,6 +115,9 @@ html {
   background: rgba(0, 0, 0, 0.5);
 }
 
+/* ******** MAIN ******** */
+
+
 .main {
   text-align: center;
   animation: fadeIn 2s ease-in-out;
@@ -110,7 +133,7 @@ html {
   text-align: center;
 }
 
-h1 {
+.title {
   font-size: 3rem;
   padding: 0;
   text-transform: uppercase;
@@ -142,13 +165,39 @@ h1 {
   margin-bottom: 40px; /* Margen a los costados */
 }
 
+.download i{
+  margin-left: 20px;
+}
+
 .download:hover {
   background: var(--secondColor);
 }
 .image {
   width: auto;
   height: 60vh;
+  overflow-x: hidden;
 }
+
+/* ******** WHO ******** */
+
+.main {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 100vw;
+  background-color: black;
+}
+
+.who-title {
+  font-size: 2.5rem;
+  padding: 0;
+  color: var(--secondColor);
+}
+
+
 
 /* @keyframes fadeIn {
   from {
@@ -166,7 +215,7 @@ h1 {
     flex-direction: row;
     align-items: center;
     max-width: 100vw;
-    padding: 2rem 10rem;
+    padding: 2rem 3rem 2rem 10rem;
   }
 
   .text-content {
@@ -184,7 +233,6 @@ h1 {
   .image {
     width: auto;
     height: 70vh;
-    margin-left: 250px;
   }
 
   .logo {
@@ -207,6 +255,11 @@ h1 {
     display: flex;
     flex-direction: row;
     color: var(--firstColor);
+  }
+
+  .nav-list li {
+    border-bottom: none;
+    padding-bottom: 6px;
   }
 
   .nav-item {
