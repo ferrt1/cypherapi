@@ -26,14 +26,14 @@ html {
   background: white;
   scroll-behavior: smooth;
   box-sizing: border-box;
-
+  overflow-x: hidden;
 }
 
 h2 {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 30px;
-  font-size: 2.7rem;
+  font-size: 1.6rem;
 }
 
 /* ******** HEADER ******** */
@@ -173,7 +173,7 @@ h2 {
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 20px 0 40px 0;
   color: var(--firstColor);
 }
@@ -185,7 +185,7 @@ h2 {
   border-radius: 50px;
   background: var(--firstColor);
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "ExpandedConsolaBold", "Arial", sans-serif;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -205,8 +205,8 @@ h2 {
   background: var(--secondColor);
 }
 .image {
-  width: auto;
-  height: 60vh;
+  width: 100%;
+  height: 50vh;
   overflow-x: hidden;
 }
 
@@ -230,13 +230,13 @@ h2 {
 }
 
 .container-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0;
   color: var(--secondColor);
 }
 
 .container-description {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 20px 0 40px 0;
   color: var(--firstColor);
   font-family: "ExpandedConsolaRegular",  "Arial", sans-serif;
@@ -249,7 +249,7 @@ h2 {
   border: none;
   border-radius: 50px;
   color: var(--secondColor);
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "ExpandedConsolaBold", "Arial", sans-serif;
   cursor: pointer;
   transition: background 0.3s ease;
@@ -311,13 +311,13 @@ h2 {
   }
   
   .black-container-title {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     padding: 0;
     color: white;
   }
   
   .black-container .black-container-description {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 20px 0 40px 0;
     font-family: "ExpandedConsolaRegular",  "Arial", sans-serif;
     text-align: left;
@@ -330,7 +330,7 @@ h2 {
     border: none;
     border-radius: 50px;
     color: var(--secondColor);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: "ExpandedConsolaBold", "Arial", sans-serif;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -382,6 +382,10 @@ h2 {
 } */
 
 @media (min-width: 1200px) {
+
+  h2{
+    font-size: 2.7rem;
+  }
 
     /* ******** HEADER ******** */
 
@@ -443,6 +447,14 @@ h2 {
     text-align: left;
     max-width: 33.33%;
   }
+  
+  .description{
+    font-size: 1.2rem;
+  }
+
+  .download{
+    font-size: 1rem;
+  }
 
   .image-content {
     display: flex;
@@ -495,13 +507,14 @@ h2 {
     flex-direction: column;
   }
   
+
   .black-container .black-container-description {
     margin: 0;
-
+    font-size: 1rem;
   }
   
   .black-container-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: left;
     margin-bottom: 20px;
   }
@@ -565,8 +578,13 @@ h2 {
   padding: 10px 0;
 }
 
+.container-description{
+  font-size: 1rem;
+}
+
 .container-button {
   width: calc(80% - 160px);
+  font-size: 1rem;
 }
 
 .container-image-wrapper {
