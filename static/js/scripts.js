@@ -33,3 +33,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+document.querySelector('.arrow-container').addEventListener('click', function() {
+  window.scrollTo({
+    top: document.documentElement.clientHeight,
+    behavior: 'smooth'
+  });
+});
