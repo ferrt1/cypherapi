@@ -483,6 +483,7 @@ h2 {
 .container-button {
   width: calc(80% - 160px);
   font-size: 1rem;
+  padding: 10px;
   margin: 0;
 }
 
