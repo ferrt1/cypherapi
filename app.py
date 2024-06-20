@@ -9,7 +9,7 @@ app = Flask(__name__)
 uploads = {}
 
 # Tiempo en segundos para mantener el archivo en memoria antes de eliminarlo
-EXPIRATION_TIME = 43200  # medio dia
+EXPIRATION_TIME = 300  # 5 minutos
 
 def remove_file_after_timeout(filename):
     time.sleep(EXPIRATION_TIME)
